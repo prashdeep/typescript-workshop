@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Closures</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var user = function(){
+        var firstName = 'Naveen';
+        var lastName = 'Kumar';
+
+        var obj = {
+            getFullName:function(){
+                return firstName + ' '+lastName;
+            },
+            
+            setFullName: function(fName, lName){
+                firstName = fName;
+                lastName = lName;
+            }
+        }
+
+        return obj;
+
+    }()
+    //var printName = user();
+    user.setFullName("Vikas",'Kumar')
+    console.log(user.getFullName());
+    console.log(user.lName);
+
+</script>
+</html>
