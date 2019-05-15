@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Class Demo</title>
+</head>
+<body>
+    
+</body>
+<script>
+    class Employee {
+
+        constructor(name, age, salary){
+            this._name = name;
+            this._age = age;
+            this._salary = salary;
+        }
+
+        printEmployeeDetails(){
+            console.log(` Employee Name: ${this._name}, Age: ${this.ageInDays(this._age)} days, Salary ${this._salary}`);
+        }
+        static method(){
+            console.log(`This is a static method `);
+        }
+
+        ageInDays(days){
+            if ( days < 18){
+                return 'child'
+            }
+            return 'Adult';
+        }
+    }
+
+    let ramesh = new Employee("Ramesh", 32, 500000);
+    ramesh.printEmployeeDetails();
+    Employee.method();
+</script>
+</html>

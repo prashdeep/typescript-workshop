@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Template Literals</title>
 </head>
 <body>
-    
+    <div id="root">
+
+    </div>
 </body>
 <script>
-    var users=[
+    let array=['1','2','3','4'];
+    let users=[
   {
     "id": 1,
     "name": "Leanne Graham",
@@ -243,16 +246,21 @@
   }
 ]
 
-var idGreaterThan8 = (user)=> user.id > 8;
+     /*for (let index = 0; index < array.length; index++) {
+         const element = array[index];
+         console.log(`
+            The ${index} element is 
+                ${element}
+                `);
+         
+     }*/
 
+     let userLi = users.map(function(user){
+         return `<li>${user.name}<li>`
+     }).join('')
 
-var fetchNameByUser = user => user.name;
+     document.querySelector("#root").appendChild(document.createElement("ul")).innerHTML=userLi;
 
-
-var printName = (name) => console.log(name) ;
-users.filter((user) => user.id > id )
-        .map((user) => user.name)
-        .forEach((name) => console.log(name))
 
 </script>
 </html>
