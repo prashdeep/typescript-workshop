@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+    // Criteria - 1 
+
+        var calculateDaysFromYears = function(days){
+            return days * 365;
+        }
+        var result = calculateDaysFromYears(4);
+    //    console.log("Result is "+ result);
+    
+    // Criteria - 2 
+    
+      var invokeFunc = function (func,days){
+          return func(days);
+      }
+
+     // console.log(invokeFunc(calculateDaysFromYears, 5));
+     //Criteria - 3 
+     var greet = function(firstname, lastname){
+         // console.log(arguments);
+         var message = 'Hello !!'
+         var printFullName = function(){
+             return message  +" "+ firstname +" "+ lastname;
+         }
+         return printFullName;
+     }
+     var result = greet("Praveen",'Kumar');
+     console.log(result());
+    
+
+</script>
+</html>
