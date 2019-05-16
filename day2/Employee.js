@@ -60,6 +60,11 @@ var Employee = /** @class */ (function () {
     return Employee;
 }());
 exports.Employee = Employee;
+exports.PI = 3.142;
+function exportedFunction() {
+    console.log("This function is being exported....");
+}
+exports.exportedFunction = exportedFunction;
 /*
 const ramesh = new Employee("Ramesh",32, 40000,'Capgemini');
 const suresh = new Employee("Suresh",30);

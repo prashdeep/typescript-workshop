@@ -50,6 +50,11 @@ export class Employee {
         this._company = company;
     }
 }
+
+export const PI = 3.142;
+export function exportedFunction(){
+    console.log(`This function is being exported....`);
+}
 /*
 const ramesh = new Employee("Ramesh",32, 40000,'Capgemini');
 const suresh = new Employee("Suresh",30);

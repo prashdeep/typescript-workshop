@@ -6,3 +6,5 @@ var suresh = new Employee_1.Employee("Suresh", 30);
 var harish = new Employee_1.Employee("Harish", 30, 30000);
 var empName = ramesh.name, age = ramesh.age, sal = ramesh.salary, comp = ramesh.company;
 console.log(empName + "\n             of " + age + " having salary of \n             " + sal + " working in " + comp);
+console.log("Value of PI is " + Employee_1.PI);
+Employee_1.exportedFunction();

@@ -1,4 +1,4 @@
-import { Employee } from "./Employee";
+import { Employee,PI,exportedFunction } from "./Employee";
 
 
 const ramesh = new Employee("Ramesh",32, 40000,'Capgemini');
@@ -10,3 +10,7 @@ let {name:empName ,age:age, salary:sal, company:comp} = ramesh;
 console.log(`${empName}
              of ${age} having salary of 
              ${sal} working in ${comp}`);
+
+console.log(`Value of PI is ${PI}`);
+
+exportedFunction();
