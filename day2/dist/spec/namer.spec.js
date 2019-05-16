@@ -8,11 +8,11 @@ describe('Namer get name should be invoked', function () {
     });
     it('should not be blank', function () {
         var namer = new namer_1.Namer();
-        expect(namer.getName()).not.toMatch("", "The function getName() should return");
+        expect(namer.getName()).not.toMatch("sfsdfd");
     });
     it('Should return MYName', function () {
         var namer = new namer_1.Namer();
-        expect(namer.getName()).toMatch("MyName");
+        expect(namer.getName()).toMatch("hello world");
     });
 });
 //# sourceMappingURL=namer.spec.js.map
