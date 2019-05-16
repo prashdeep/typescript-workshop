@@ -13,6 +13,7 @@ function newPrintLabel(labelType:LabelInterface){
 
 let labelObj = {label:"Welcome to Typescript training"};
 
+
 newPrintLabel(labelObj);
 
 interface Point {
@@ -79,7 +80,8 @@ interface Square extends Shape, PenStroke {
     sideLength: number;
 }
 
-let square = <Square>{};
+let square:Square = <Square>{};
+let color = "blue";
 square.color = "blue";
 square.sideLength = 10;
 square.penWidth = 5.0;
