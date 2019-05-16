@@ -6,14 +6,15 @@ var Employee = /** @class */ (function () {
      private salary:number;
      private company:string;
      */
-    function Employee(_name, _age, _salary, _company) {
+    function Employee(_name, _age, 
+    //private _salary:number, 
+    _company) {
         this._name = _name;
         this._age = _age;
-        this._salary = _salary;
         this._company = _company;
         this._name = _name;
         this._age = _age;
-        this._salary = _salary;
+        // this._salary = _salary;
         this._company = _company;
     }
     Object.defineProperty(Employee.prototype, "name", {
@@ -37,17 +38,14 @@ var Employee = /** @class */ (function () {
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(Employee.prototype, "salary", {
-        get: function () {
-            return this._salary;
-        },
-        set: function (salary) {
-            this._salary = salary;
-        },
-        enumerable: true,
-        configurable: true
-    });
     Object.defineProperty(Employee.prototype, "company", {
+        /* get salary():number{
+             return this._salary;
+         }
+     
+         set salary(salary:number){
+             this._salary = salary;
+         }*/
         get: function () {
             return this._company;
         },

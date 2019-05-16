@@ -28,7 +28,7 @@ export class Order {
 
 }
 
- let harish:Employee = new Employee("Harish",33,30000,"Infosys");
+ let harish:Employee = new Employee("Harish",33,"Infosys");
  
  let order = new Order("Pizza", 200);
 export function printCurrentStatus(order:Order){
