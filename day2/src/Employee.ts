@@ -8,11 +8,11 @@ export class Employee {
     */
     constructor(private _name:string, 
                 private _age:number, 
-                private _salary:number, 
+                //private _salary:number, 
                 private _company:string){
         this._name = _name;
         this._age = _age;
-        this._salary = _salary;
+       // this._salary = _salary;
         this._company = _company;
     }
 
@@ -33,13 +33,13 @@ export class Employee {
         this._age = age;
     }
 
-    get salary():number{
+   /* get salary():number{
         return this._salary;
     }
 
     set salary(salary:number){
         this._salary = salary;
-    }
+    }*/
 
 
     get company():string{
