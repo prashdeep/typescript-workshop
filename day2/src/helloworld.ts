@@ -1,13 +1,13 @@
-let greet = function(name){
+let greet2  = function(name:string):void{
     let message = `Hello !! ${name}`;
     console.log(message);
 }
 
 
 class User {
-    name;
-    age;
-    constructor(name, age){
+    name:string;
+    age:number;
+    constructor(name:string, age:number){
         this.name = name;
         this.age = age;
     }
@@ -20,11 +20,11 @@ class User {
         return this.age;
     }
 
-    setName(name){
+    setName(name:string){
         this.name = name;
     }
 
-    setAge(age){
+    setAge(age:number){
         this.age = age;
     }
 }

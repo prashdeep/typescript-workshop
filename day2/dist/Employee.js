@@ -77,3 +77,4 @@ console.log(`${empName}
              ${sal} working in ${comp}`);
 
 ramesh.age  = 45;*/ 
+//# sourceMappingURL=Employee.js.map

@@ -8,8 +8,8 @@ export class Employee {
     */
     constructor(private _name:string, 
                 private _age:number, 
-                private _salary?:number, 
-                private _company?:string){
+                private _salary:number, 
+                private _company:string){
         this._name = _name;
         this._age = _age;
         this._salary = _salary;

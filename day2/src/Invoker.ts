@@ -2,8 +2,8 @@ import { Employee,PI,exportedFunction } from "./Employee";
 
 
 const ramesh = new Employee("Ramesh",32, 40000,'Capgemini');
-const suresh = new Employee("Suresh",30);
-const harish =  new Employee("Harish",30,30000);
+const suresh = new Employee("Suresh",30,20000, "Infosys");
+const harish =  new Employee("Harish",30,30000,"Wipro");
 
 
 let {name:empName ,age:age, salary:sal, company:comp} = ramesh;

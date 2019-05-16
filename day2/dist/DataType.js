@@ -1,3 +1,4 @@
+"use strict";
 var courseName = "Typescript";
 var duration = 2;
 var classRoomTraining = true;
@@ -9,3 +10,4 @@ var greet = function (name, message) {
 };
 var result = greet("Ramesh", "Welcome to Typescript course");
 console.log(result);
+//# sourceMappingURL=DataType.js.map

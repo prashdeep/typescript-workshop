@@ -1,4 +1,5 @@
-var greet = function (name) {
+"use strict";
+var greet2 = function (name) {
     var message = "Hello !! " + name;
     console.log(message);
 };
@@ -21,3 +22,4 @@ var User = /** @class */ (function () {
     };
     return User;
 }());
+//# sourceMappingURL=helloworld.js.map
