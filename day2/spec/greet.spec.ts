@@ -3,21 +3,15 @@ import {Greet} from '../src/greet';
 describe('Greet function get name should be invoked', () => {
   it('should be defined', () => {
       const greet = new Greet();
-      expect(greet.greet()).toBeDefined("The definition greet() should be defined");
+      expect(greet.greet('Mahesh', "Good evening")).toBeDefined("The definition greet() should be defined");
   });
-  it('should not be blank', () => {
+  it('shoud be equal', () => {
       const  greet = new Greet();
-      expect(greet.greet()).not.toMatch("test")
+      expect(greet.greet('Mahesh', "Good evening")).toEqual("Welcome Mahesh!! Good evening")
   });
   
-  it('Should return the greet with hello world', () => {
+  it('Should not be equal - Negative test case', () => {
       const  greet = new Greet();
-      expect(greet.greet()).toMatch("hello world");
-  });
+      expect(greet.greet('Mahesh', "Good evening")).not.toEqual("Welcome Mahesh Good evening")  });
 
-  it('Should always return the greet ', () => {
-      const greet = new Greet();
-      expect(greet.greet()).toContain('hello');
-  });
-  
 })
