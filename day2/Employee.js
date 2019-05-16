@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var Employee = /** @class */ (function () {
     /* private name:string;
      private age:number;
@@ -57,9 +59,16 @@ var Employee = /** @class */ (function () {
     });
     return Employee;
 }());
-var ramesh = new Employee("Ramesh", 32, 40000, 'Capgemini');
-var suresh = new Employee("Suresh", 30);
-var harish = new Employee("Harish", 30, 30000);
-var empName = ramesh.name, age = ramesh.age, sal = ramesh.salary, comp = ramesh.company;
-console.log(empName + "\n             of " + age + " having salary of \n             " + sal + " working in " + comp);
-ramesh.age = 45;
+exports.Employee = Employee;
+/*
+const ramesh = new Employee("Ramesh",32, 40000,'Capgemini');
+const suresh = new Employee("Suresh",30);
+const harish =  new Employee("Harish",30,30000);
+
+
+let {name:empName ,age:age, salary:sal, company:comp} = ramesh;
+console.log(`${empName}
+             of ${age} having salary of
+             ${sal} working in ${comp}`);
+
+ramesh.age  = 45;*/ 

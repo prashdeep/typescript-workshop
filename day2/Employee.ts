@@ -1,5 +1,5 @@
 
-class Employee {
+export class Employee {
 
    /* private name:string;
     private age:number;
@@ -50,7 +50,7 @@ class Employee {
         this._company = company;
     }
 }
-
+/*
 const ramesh = new Employee("Ramesh",32, 40000,'Capgemini');
 const suresh = new Employee("Suresh",30);
 const harish =  new Employee("Harish",30,30000);
@@ -61,4 +61,4 @@ console.log(`${empName}
              of ${age} having salary of 
              ${sal} working in ${comp}`);
 
-ramesh.age  = 45;
+ramesh.age  = 45;*/
